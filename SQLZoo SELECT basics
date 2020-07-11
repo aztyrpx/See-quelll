@@ -1,0 +1,11 @@
+ The first task on SQLZoo is brushing up on the basics of the select statement which includes the usage of the where , from clauses and comparisons.
+ 
+ Q1) Modify it to show the population of Germany
+ ---> SELECT population FROM world WHERE name = 'Germany'
+ Q2) Show the name and the population for 'Sweden', 'Norway' and 'Denmark'.
+ ---> SELECT name , population from world WHERE name IN ('Sweden' , 'Norway' , 'Denmark')
+ Q3) Show the country and the area for countries with an area between 200,000 and 250,000.
+ ---> SELECT name , area FROM world WHERE area BETWEEN 200000 AND 250000 
+                      0R
+      SELECT name , area FROM world WHERE area > 200000 AND area < 250000
+
